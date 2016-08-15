@@ -29,7 +29,7 @@ class ExNavigatorBar extends React.Component {
 
   render () {
     return (
-      <Navigator.NavigationBar {...this.props} />
+      <Navigator.NavigationBar {...this.props.inherit} />
     )
   }
 }
@@ -55,7 +55,7 @@ export default class ExNavigator extends React.Component {
     ...Navigator.defaultProps,
     showNavigationBar: true,
     renderNavigationBar: props => {
-      return <ExNavigatorBar {...props} />
+      return <ExNavigatorBar inherit={props} />
     },
   };
 
