@@ -17,7 +17,7 @@ import ExNavigatorMixin from './ExNavigatorMixin';
 import ExNavigatorStyles from './ExNavigatorStyles';
 import ExRouteRenderer from './ExRouteRenderer';
 import ExSceneConfigs from './ExSceneConfigs';
-import ExNavigationBar from './ExNavigationBar';
+import NavigatorNavigationBar from './ExNavigationBar';
 
 import * as ExNavigatorIcons from './ExNavigatorIcons';
 
@@ -44,7 +44,7 @@ export default class ExNavigator extends React.Component {
     ...Navigator.defaultProps,
     showNavigationBar: true,
     renderNavigationBar: props => {
-      return <ExNavigationBar {...props} />
+      return <NavigatorNavigationBar {...props} />
     },
   };
 
